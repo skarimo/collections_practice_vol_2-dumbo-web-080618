@@ -1,3 +1,5 @@
+require 'pry'
+
 def begins_with_r(arr)
   arr.any? do |word|
     return false if !word.start_with?("r")
@@ -29,8 +31,32 @@ counts = Hash.new(0)
     return_arr
 end
 
+def merge_data(arr1,arr2)
+	merged =[]
+	arr1.each_index do |i|
+		arr2[0].keys.each do |name|
+			merged << arr1[i].merge(arr2[0][name]) if name == arr1[i][:first_name]
+		end
+	end
+	merged
+end
 
 
+def find_cool(arr)
+  arr.select do |item| 
+    item.has_value?('cool')
+   end
+end
+  
+def organize_schools(schools)
+  organized_schools = {}
+     schools.each do |name, hash|
+        location = hash[:location]
+  organized_schools[location] ||= []
+  organized_schools[location] << name
+end
+organized_schools
+end
 
 
 
