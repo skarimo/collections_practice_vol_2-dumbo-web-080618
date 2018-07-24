@@ -46,8 +46,11 @@ def find_cool(arr)
   arr.select do |item| 
     item.has_value?('cool')
    end
-  end
-
+end
+  
+def organize_schools
+  
+end
 
 
 
