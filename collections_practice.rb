@@ -32,7 +32,7 @@ counts = Hash.new(0)
 end
 
 def merge_data(hash1, hash2)
-  binding.pry
+  
 end
 
 
