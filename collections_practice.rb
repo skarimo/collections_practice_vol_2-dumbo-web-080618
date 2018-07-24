@@ -43,8 +43,7 @@ end
 
 
 def find_cool(arr)
-  def find_cool(array)
-  array.select do |item| 
+  arr.select do |item| 
     item.has_value?('cool')
    end
   end
