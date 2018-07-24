@@ -55,6 +55,7 @@ def organize_schools(schools)
        locations_hash.each do |k,v| schools.each {|k1,v1| if k == v1[:location] then v << k1  end}}
 end
 end
+end
 
 
 
