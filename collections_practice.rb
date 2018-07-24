@@ -49,9 +49,14 @@ def find_cool(arr)
 end
   
 def organize_schools(schools)
-   locations_hash = {}
-  schools.collect each do |k,v| locations_hash[v[:location]] = []}
-   locations_hash.each {|k,v| schools.each {|k1,v1| if k == v1[:location] then v << k1  end}}
+  organized_schools = {}
+     schools.each do |name, hash|
+        location = hash[:location]
+  organized_schools[location] ||= []
+      puts name
+  organized_schools[location] << name
+end
+organized_schools
 end
 
 
