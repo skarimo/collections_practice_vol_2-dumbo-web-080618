@@ -1,3 +1,5 @@
+require 'pry'
+
 def begins_with_r(arr)
   arr.any? do |word|
     return false if !word.start_with?("r")
@@ -29,7 +31,9 @@ counts = Hash.new(0)
     return_arr
 end
 
-
+def merge_data(hash1, hash2)
+  binding.pry
+end
 
 
 
