@@ -47,7 +47,6 @@ def find_cool(arr)
     item.has_value?('cool')
    end
   end
-end
 
 
 
