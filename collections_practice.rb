@@ -31,8 +31,14 @@ counts = Hash.new(0)
     return_arr
 end
 
-def merge_data(hash1, hash2)
-  
+def merge_data(arr1,arr2)
+	merged =[]
+	arr1.each_index do |i|
+		arr2[0].keys.each do |name|
+			merged << arr1[i].merge(arr2[0][name]) if name == arr1[i][:first_name]
+		end
+	end
+	merged
 end
 
 
